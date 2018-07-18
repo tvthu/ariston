@@ -1,0 +1,25 @@
+extends ./include/layout.pug
+
+block menu
+    li.active
+        a(href='./', data-tracking='slim30-menu-trang-chu') Trang chủ
+    li
+        a(href='./#san-pham', data-tracking='slim30-menu-trang-chu') Sản phẩm
+    li
+        a(href='./#diem-ban', data-tracking='slim30-menu-trang-chu') Điểm bán
+
+block content
+    .top-banner.wow.fadeInUp
+        img(src='./assets/images/space-saving-baner.png')
+        h1.center-block thiết kế mảnh mai
+    div.container.sing-content.wow.fadeInUp
+        img(src="./assets/images/slim-icon.png")
+        p
+            em
+                | Thông qua một nghiên cứu về hành vi tiêu dùng máy nước nóng của người Việt, Ariston nhận ra rằng xu hướng “siêu mỏng” chính là xu thế thời thượng của khách hàng chuộng sự tiện nghi & nhỏ gọn trong thiết kế.
+                | Do đó nhiều căn hộ, chung cư để tiết  kiệm không gian, thường đặt máy nước nóng trên trần giả.
+        p.text-color-gray
+            | SLIM 30 ST mới là giải pháp tối ưu cho mọi nhà tắm, nhất là những không gian nhỏ hoặc thiết kế chung cư hiện đại.
+            | Bởi vì kích thước máy đã thu gọn tối đa (757W*331H*341D mm) vừa vặn với trần giả (chiều cao thông thường là 400mm).
+        div.text-center
+            a.site-button(href='./', data-tracking='slim30-menu-trang-truoc') Trở về trang trước

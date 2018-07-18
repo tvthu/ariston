@@ -1,0 +1,212 @@
+extends ./include/layout.pug
+
+block menu
+    li.active
+        a(href='./', data-tracking='slim30-menu-trang-chu') Trang chủ
+    li
+        a(href='#san-pham', data-tracking='slim30-menu-san-pham') Sản phẩm
+    li
+        a(href='#diem-ban', data-tracking='slim30-menu-diem-ban') Điểm bán
+
+block content
+    .top-banner.wow.fadeInUp
+        img.photo-hoz(src='./assets/images/banner.png')
+        img.photo-vertical(src='./assets/images/ariston-vertical-banner.jpg')
+    .blocks-content
+        .content-block.background-dark.wow.fadeInUp
+            article.container
+                h3.text-color-red SLIM 30 ST MỚI
+                p
+                    em
+                        | Thiết kế nhỏ gọn, hiện đại,
+                        br
+                        | thích hợp mọi không gian nhà tắm.
+                        br
+                        | Với dung tích thực 30L, mang lại
+                        br
+                        | sự thoải mái bất tận cho gia đình bạn.
+        #home-saving-space.bg-block.wow.fadeInUp
+            article.container
+                //.pull-left.text-right-md.half-width-md
+                .pull-right.text-left-md.half-width-md
+                    h3.text-color-black thiết kế mảnh mai
+                    p
+                        | Với chiều cao 33cm,
+                        br
+                        |  SLIM 30 ST phù hợp với nhà tắm có không gian nhỏ hẹp
+                        br
+                        |  và dễ dàng lắp đặt trên trần giả có độ cao thông thường 40cm.
+                    div
+                        a.btn-readmore(href='./space-saving.html', data-tracking='slim30-cta-thiet-ke-manh-mai') Tìm hiểu thêm
+        #home-design-modern.bg-block.wow.fadeInUp
+            article.container
+                //.pull-right.text-left-md.half-width-md
+                .pull-left.text-right-md.half-width-md
+                    img(src='./assets/images/30L_B-N_Front_S.png')
+                    h3.text-color-black thiết kế hiện đại
+                    p
+                        | SLIM 30 ST được thiết kế bởi nhà thiết kế nổi tiếng người Ý – Umberto Palermo.
+                        | Với những đường nét mạnh mẽ, hiện đại thích hợp với không gian nhà tắm sang trọng.
+                    div
+                        a.btn-readmore(href='./modern-design.html', data-tracking='slim30-cta-thiet-ke-hien-dai') Tìm hiểu thêm
+        #real-capactity.bg-block.wow.fadeInUp
+            article
+                .container
+                    h3.text-color-black dung tích thực 30 lít
+                .video-block.clearfix
+                    .caption
+                        p.wow.fadeInUp
+                            | Sản phẩm SLIM 30 ST mới tuy có thiết kế nhỏ gọn nhưng vẫn đảm bảo chính xác dung tích thực 30L.
+                            | Do đó người tiêu dùng có thể tối đa thời gian tận hưởng cảm giác thoải mái cho mọi thành viên trong gia đình.
+                    .background-video.onstop
+                        video#Video1
+                            source(src="./assets/images/ariston-slim30-video.mp4")
+                        span.play-button
+                            i.material-icons play_arrow
+                        span.pause-button
+                            i.material-icons pause
+
+
+        #function-block.content-block.background-gray.wow.fadeInUp
+            article.container
+                h3 các tính năng khác
+                .services
+                    .col-md-6.col-sm-12
+                        img(src='./assets/images/bg-function-1.png')
+                        .service-title.clearfix
+                            .image-icon
+                                img(src='./assets/images/burn-icon.png')
+                            .service-right-content
+                                h4 thanh đốt bằng đồng
+                                p Cho độ bền vượt trội
+                    .col-md-6.col-sm-12
+                        img(src='./assets/images/bg-function-2.png')
+                        .service-title.clearfix
+                            .image-icon
+                                img(src='./assets/images/light-icon.png')
+                            .service-right-content
+                                h4 đèn báo nước nóng sẵn sàng
+                                p
+                                    | Tương tác tốt hơn với người sử dụng,
+                                    br
+                                    |  thuận lợi & tiết kiệm điện
+                    .col-md-12.col-sm-12
+                        .big
+                            .image-icon
+                                img(src='./assets/images/tss-icon.png')
+                            h4 hệ thống kiểm soát an toàn đồng bộ tss
+                            p
+                                | Đảm bảo an toàn cho người sử dụng
+        #san-pham.content-block.wow.fadeIn
+            article.container
+                h3 sản phẩm
+                .carusel-container
+                    .carusel-item
+                        article
+                            p
+                                img(src='./assets/images/30L_B-N_Front.png')
+                            h5 SLIM 30 ST
+                            .prod-info
+                                .cost 3,750,000
+                                    span  vnđ
+                                ul.prod-detail
+                                    li
+                                        img(src="./assets/images/slim-icon.png")
+                                        span Tiết kiệm không gian
+                                    li
+                                        img(src="./assets/images/italia-icon.png")
+                                        span Thiết kế Ý sang trọng
+                                    li
+                                        img(src="./assets/images/real30-icon.png")
+                                        span Dung tích thực 30L
+                                    li
+                                        img(src="./assets/images/light-icon.png")
+                                        span Đèn LED màu xanh báo nước nóng sẵn sàng
+                                // .prod-detail
+                                div.button-showup
+                                    span.fab-button
+                                        i.material-icons add
+                                .button-pdf
+                                    a.site-button(href='http://www.ariston.com/vn/Máy_nước_nóng_dùng_điện', target="_blank", data-tracking='slim30-product-cta-slim30st') Xem thêm
+                    .carusel-item
+                        article
+                            p
+                                img(src='./assets/images/30L_B-S_Front.png')
+                            h5 SLIM 30 ST MT
+                            .prod-info
+                                .cost 3,860,000
+                                    span vnđ
+                                ul.prod-detail
+                                    li
+                                        img(src="./assets/images/silver-icon.png")
+                                        span Công nghệ ION BẠC
+                                    li
+                                        img(src="./assets/images/slim-icon.png")
+                                        span Tiết kiệm không gian
+                                    li
+                                        img(src="./assets/images/italia-icon.png")
+                                        span Thiết kế Ý sang trọng
+                                    li
+                                        img(src="./assets/images/real30-icon.png")
+                                        span Dung tích thực 30L
+                                    li
+                                        img(src="./assets/images/light-icon.png")
+                                        span Đèn LED màu xanh báo nước nóng sẵn sàng
+                                i.notify
+                                    span *
+                                    | Chỉ bán ở kênh siêu thi điện máy
+                                // .prod-detail
+                                div.button-showup
+                                    span.fab-button
+                                        i.material-icons add
+                                .button-pdf
+                                    a.site-button(href='http://www.ariston.com/vn/Máy_nước_nóng_dùng_điện', target="_blank", data-tracking='slim30-product-cta-slim30stmt') Xem thêm
+                    .carusel-item
+                        article
+                            p
+                                img(src='./assets/images/30L_B-B_Front.png')
+                            h5 SLIM 30 ST B
+                            .prod-info
+                                .cost 3,620,000
+                                    span vnđ
+                                ul.prod-detail
+                                    li
+                                        img(src="./assets/images/slim-icon.png")
+                                        span Tiết kiệm không gian
+                                    li
+                                        img(src="./assets/images/italia-icon.png")
+                                        span Thiết kế Ý sang trọng
+                                    li
+                                        img(src="./assets/images/real30-icon.png")
+                                        span Dung tích thực 30L
+                                // .prod-detail
+                                div.button-showup
+                                    span.fab-button
+                                        i.material-icons add
+                                .button-pdf
+                                    a.site-button(href='http://www.ariston.com/vn/Máy_nước_nóng_dùng_điện', target="_blank", data-tracking='slim30-product-cta-slim30stb') Xem thêm
+                span.clearfix
+        #diem-ban.content-block.background-gray.wow.fadeIn
+            article.container
+                h3 điểm bán
+                .sku_locations
+                    .hd_Act_Select_Textbox.row
+                        .col-sx-12.col-sm-3
+                            .style-select
+                                select#selector_province(name='selector_province')
+                                    option(value='') Chọn Tỉnh/Thành phố
+                            p
+                        .col-sx-12.col-sm-3
+                            .style-select
+                                select#selector_district(name='selector_district')
+                                    option(value='') Chọn Quận/Huyện
+                            p
+                        .col-sx-12.col-sm-6
+                            .style-input
+                                input#searchAddress(type='text', name='Address', placeholder='Tên đường')
+                            .style-button
+                                input#searchBtn(type='button', name='SearchBtn', value='Tìm kiếm', data-tracking='slim30-search')
+                            p
+                    #hd_Act_Box_02
+                        table.table.table-striped
+                            tbody

@@ -1,0 +1,45 @@
+#site-navigation {
+
+}
+
+#primary-menu {
+  @include transform(scaleY(0));
+
+  transform-origin: top;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  background-color: $red-site-color;
+  border-top: 1px solid $black-site-color;
+  z-index: 10;
+
+  &[aria-expanded=true] {
+    @include transform(scaleY(1));
+  }
+
+  li {
+    float: none;
+
+    &:not(:last-child) {
+      border-right: none;
+    }
+
+    a {
+      padding: 0 15px;
+      line-height: 35px;
+    }
+  }
+}
+
+.space-middle {
+  display: inline-block;
+}
+//
+//.top-banner .center-block{
+//  left: 0;
+//  text-align: center;
+//  transform: none;
+//  width: 100%;
+//}

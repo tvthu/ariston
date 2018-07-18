@@ -1,0 +1,44 @@
+.top-banner{
+  .photo-hoz{
+    display: none;
+  }
+
+  .photo-vertical{
+    display: block;
+  }
+}
+
+.blocks-content{
+  .bg-block{
+    min-height: 550px;
+  }
+  article .btn-readmore{
+    margin-top: 15px;
+  }
+}
+
+#home-saving-space {
+  p{
+    br{
+      display: none;
+    }
+  }
+
+  article{
+    padding-top: 180px;
+  }
+}
+
+#real-capactity {
+  .video-block {
+    .caption {
+      padding: 20px;
+    }
+  }
+}
+
+#function-block .services .service-title {
+  p {
+    min-height: unset;
+  }
+}

@@ -1,0 +1,160 @@
+body{
+  @extend %myriadrd-font;
+}
+
+h1, h3 {
+  font-size: 61px;
+  font-weight: bold;
+  line-height: 1.09;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+h4 {
+  @extend .text-color-red;
+
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 21px;
+  line-height: 1.6;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.half-width-md {
+  width: 50%;
+}
+
+.text-left-md{
+  text-align: left;
+}
+
+.text-right-md{
+  text-align: right;
+}
+
+.background-dark {
+  background-color: $black-site-color;
+  color: $white-site-color;
+}
+
+.background-gray{
+  background-color: $gray-site-color;
+}
+
+.text-color-gray{
+  color: $gray-tone1-site-color;
+}
+
+.text-color-red {
+  color: $red-site-color;
+}
+
+.background-red{
+  background-color: $red-site-color;
+  color: $white-site-color;
+}
+
+.text-color-black{
+  color: $black-site-color;
+}
+
+.bacground-black{
+  background-color: $black-site-color;
+  color: $white-site-color;
+}
+
+p:empty{
+  display: none;
+}
+
+.break-sm{
+
+}
+
+.break-md{
+
+}
+
+.wide-caption{
+  @extend .break-sm;
+}
+
+.btn-fab{
+  width: 40px;
+  height: 40px;
+
+  background-color: $red-site-color;
+  color: $white-site-color;
+  display: inline-block;
+  border-radius: 20px;
+
+  padding: 8px;
+  cursor: pointer;
+
+  .material-icons{
+    //font-size: 16px;
+  }
+}
+
+%style-button{
+  @extend .background-red;
+}
+
+.site-button{
+  @extend %style-button;
+
+  display: inline-block;
+  width: auto;
+  margin: auto;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: bold;
+
+  border-radius: 20px;
+  padding: 15px 28px 13px;
+
+  &:hover, &:focus{
+    @extend .background-red;
+  }
+
+  &:focus{
+    outline: none;
+  }
+}
+
+.fab-button{
+  @extend %style-button;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+
+  i {
+    font-size: 14px;
+    line-height: 35px
+  }
+}
+
+// modify animate.css
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 30px, 0);
+    transform: translate3d(0, 30px, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}

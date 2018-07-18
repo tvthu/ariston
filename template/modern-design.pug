@@ -1,0 +1,43 @@
+extends ./include/layout.pug
+
+block menu
+    li.active
+        a(href='./', data-tracking='slim30-menu-trang-chu') Trang chủ
+    li
+        a(href='./#san-pham', data-tracking='slim30-menu-trang-chu') Sản phẩm
+    li
+        a(href='./#diem-ban', data-tracking='slim30-menu-trang-chu') Điểm bán
+
+block content
+    .top-banner.banner-with-text.wow.fadeInUp
+        img.fake-background(src='./assets/images/modern-desing-banner.png')
+
+        .overlay-banner
+            .container
+                h1.hidden-xs-xs.text-center-sm đẳng cấp ý với thiết kế up
+                .mr-up-fa
+                    img(src="./assets/images/mr-up-fa.png")
+                .banner-pagarap
+                    h1.break-md.text-center-sm
+                        | đẳng cấp ý
+                        br
+                        |  với thiết kế up
+                    div
+                        p
+                            em
+                                | “Thách thức đồng thời cũng là nguồn cảm hứng của tôi trong dự án này,
+                                | là tạo nên một diện mạo mới, biến những chiếc máy nước nóng thành những phụ kiện trang trí nội thất tinh tế trong khi vẫn thể hiện sự hoàn hảo của các tính năng kỹ thuật.”
+                        p.text-color-red
+                            b Umberto Palermo
+                        .text-right.hidden-sm.hidden-xs
+                            img.sport-photo(src="./assets/images/car-sport.png")
+
+    div.container.sing-content.wow.fadeInUp
+        img(src="./assets/images/italia-icon.png")
+        p.text-color-gray
+            | Bên cạnh chất lượng Ý hàng đầu vốn là một trong những yếu tố làm nên thành công cho thương hiệu Ariston, thiết kế UP sang trọng, tinh tế của dòng sản phẩm SLIM 30 ST mới đem đến chuẩn mực về cuộc sống tiện nghi.
+            b  Umberto Palermo
+            | , một nhà thiết kế lừng danh trong ngành công nghiệp ô tô và các sản phẩm cao cấp – chính là người đã thiết kế ra các sản phẩm máy nước nóng SLIM 30 ST mới của Ariston. Dòng sản phẩm mới là sự cân bằng hoàn hảo giữa tính năng vượt trội và vẻ đẹp sang trọng mang đậm phong cách Ý.
+            | Với thiết kế bên ngoài thay đổi SLIM 30 ST mới nhìn mạnh mẽ & nam tính hơn.
+        div.text-center
+            a.site-button(href='./', data-tracking='slim30-menu-trang-truoc') Trở về trang trước

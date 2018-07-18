@@ -1,0 +1,38 @@
+h1, h3 {
+  font-size: 40px;
+}
+
+h4{
+  font-size: 14px;
+}
+
+p {
+  font-size: 14px;
+}
+
+.half-width-md {
+  width: 100%;
+}
+
+.text-left-md {
+  text-align: inherit;
+}
+
+.text-right-md {
+  text-align: inherit;
+}
+
+.text-center-sm{
+  text-align: center;
+}
+
+.break-sm {
+  br {
+    display: none;
+  }
+}
+
+.wide-caption {
+  max-width: 80%;
+  margin: auto;
+}

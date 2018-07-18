@@ -1,0 +1,168 @@
+.banner-with-text{
+
+  .fake-background{
+    display: none;
+  }
+
+  .overlay-banner{
+    background-image: url("../images/modern-desing-banner.png");
+    background-size: cover;
+    padding-top: 30px;
+
+    position: relative;
+
+    .banner-pagarap{
+      width: 70%;
+      position: relative;
+      float: right;
+    }
+
+    img{
+      display: none;
+    }
+  }
+
+  .mr-up-fa {
+    width: 30%;
+    height:100%;
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    img{
+      display: block;
+      height: auto;
+      width: auto;
+      max-height: 100%;
+    }
+  }
+}
+
+.blocks-content {
+  article {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .btn-readmore {
+      margin-top: 10px;
+    }
+  }
+
+  .bg-block {
+    min-height: 450px;
+  }
+}
+
+#home-saving-space {
+  background-position: 12% 0;
+
+  article {
+    padding-top: 135px;
+  }
+}
+
+#home-design-modern{
+  background-position: 30% 0;
+
+  img{
+    max-width: 200px;
+  }
+
+  p{
+    max-width: 80%;
+    margin: auto;
+  }
+}
+
+#real-capactity {
+  .caption {
+    float: none;
+    width: 100%;
+  }
+  .background-video {
+    float: none;
+    width: 100%;
+  }
+}
+
+#real-capactity {
+  min-height: 0;
+  color: red;
+
+  .video-block {
+    .caption {
+      @include transform(none);
+
+      position: relative;
+      top: 0;
+      left: 0;
+      text-align: center;
+
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}
+
+
+.sku_locations{
+
+  .style-input{
+    width: calc(100% - 103px);
+  }
+
+  .style-button{
+    width: 87px;
+    margin-left: 12px;
+  }
+}
+
+#san-pham{
+  .prod-info{
+    .cost {
+      color: $red-site-color;
+    }
+
+    .prod-detail {
+      height: auto;
+    }
+
+    .button-showup {
+      display: none;
+    }
+
+    .button-pdf {
+      display: block;
+      padding-left: 0;
+      text-align: center;
+    }
+  }
+}
+
+#hd_Act_Box_02 {
+  .addname{
+    width: auto;
+  }
+
+  .addprovice{
+    width: auto;
+  }
+
+  .addmap{
+    width: auto;
+  }
+}
+
+#function-block {
+  .services {
+    > div {
+      .service-title{
+        margin-top: calc(12vw / -1.5);
+        position: relative;
+      }
+    }
+
+    .big{
+      padding-bottom: 12px;
+    }
+  }
+}

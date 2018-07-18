@@ -1,0 +1,44 @@
+$red-site-color: #9d2831;
+$white-site-color: #ffffff;
+$black-site-color: #101010;
+
+$border-site-color: #565656;
+$gray-site-color: #eeeeee;
+$gray-tone1-site-color: #888888;
+
+$form-border-color: #c2c2c2;
+$footer-background: #dadada;
+
+$black90-site-color: rgba(16,16,16, 0.9);
+
+$font-myriard: 'Myriad', sans-serif;
+
+$top-menu-height: 46px;
+$form-height: 35px;
+
+
+@mixin transform($value_tranform){
+  -ms-transform: $value_tranform;
+  -webkit-transform: $value_tranform;
+  transform: $value_tranform;
+}
+
+%myriadrd-font{
+  font-family: $font-myriard;
+}
+
+%site-animation{
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+%gird-container {
+  &::before, &:after {
+    content: ' ';
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
